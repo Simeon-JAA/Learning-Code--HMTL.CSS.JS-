@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+/*import fonts and style etc... */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Indie Flower', cursive, 'Roboto', Arial, Helvetica, sans-serif;
+  color: white;
+}
+body {
+  background-color: black;
+}
+.container-all {
+  margin: 100px auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 400px;
+  text-align: center;
+  border-style: solid;
+  border-width:  2px;
+  border-radius: 20px;
+  border-color: #3333;
+  background-color: rgb(22, 22, 22);
+  transition: 300ms;
+  
+}
+.title {
+  font-size: 2rem;
+}
+.value {
+  font-size: 1.5rem;
+
+}
+.btn-container {
+  margin-top: 15px;
+}
+.btn{
+  padding: 5px 5px;
+  background-color: none;
+  border-color: whitesmoke;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+  background-color: gray;
+}
+.btn:active {
+  opacity: 0.8;
+  transition: 100ms;
+}
+.increase:hover {
+  color: green;
+  background-color: lightgreen;
+  transition: 100ms;
+}
+.decrease:hover {
+  background-color: red;
+  color: rgb(241, 82, 82);
+  transition: 100ms;
+}
+.reset {
+  margin: auto 20px;
+}
+.random{
+  margin-top: 10px;
+}
+
+/*theme settings etc*/
+.theme-container{
+  padding-left: 20px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.color {
+  margin-left: 20px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border-style: solid;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.pink {
+  background-color: pink;
+}
+
+
+
+
+/* theme styles - all listed below*/
