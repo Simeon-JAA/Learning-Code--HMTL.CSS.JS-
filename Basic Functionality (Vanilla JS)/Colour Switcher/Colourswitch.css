@@ -1,0 +1,91 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgb(31, 31, 31);
+  border-color: rgb(31, 31, 31);;
+}
+.nav-container{
+    display: flex;
+    position: absolute;
+    border-width: 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-color: rgb(31, 31, 31);
+    border-style: solid;
+    height: 70px;
+    margin-top: 0px;
+    justify-content: space-between;
+}
+main {
+  margin-top: 120px;
+  display: grid;
+
+}
+.title {
+  font-family: 'Monoton', cursive;
+  font-size: 4rem;
+  font-weight: 100;
+  color: rgb(31, 31, 31);
+}
+.logo-container {
+   vertical-align: middle; 
+   text-align: center;
+   font-family: Erica One;   
+   font-size: larger;
+   letter-spacing: 5px;
+   margin: auto 10px;
+}
+.switch-container {
+    display: flex;
+}
+ul {
+list-style-type: none;
+}
+li{
+  display: inline-block;
+  margin: 20px;
+}
+a {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+.switch-container{
+    display: inline-block;
+    text-align: right;
+    align-items: flex-end;
+}
+.btn {
+    padding: 10px 30px;
+    background: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.btn:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.btn-container, .title-container {
+    text-align: center;
+}
+.colour-text {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: lightgray;
+    border-width: 1px;
+    color: #3a3a3a;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 5px 20px 5px 20px;
+    margin: 30px auto;
+}
