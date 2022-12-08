@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+:root{
+  --offwhite: #f6f8ec;
+  --dark: #333;
+  --light: rgb(219, 219, 219);
+  --lightpink: #F8B195;
+  --darkpink: #F67280;
+  --darkpink-trans: rgba(246, 114, 128, 0.7);
+  --darkpink-transer: rgba(246, 114, 128, 0.4);
+  --purple: #C06C84;
+  --purp-hybrid: #6C5B7B;
+  --blue: #355C7D;  
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--lightpink);
+}
+.img {
+  width: 30%;
+  display:inline-block;
+  border: solid 1px var(--light);
+  border-radius: 40px;
+  box-shadow: 0px 1px 5px var(--dark);
+  margin: 30px 10px auto auto;
+  vertical-align: top;
+}
+.container {
+  width: 65%;
+  display: inline-block;
+}
+.about {
+  width:80%;
+  position: relative;
+  margin: 30px auto;
+  padding: 20px 15px 20px 15px;
+  border: solid rgba(0, 0, 0, 0.5) 3px;
+  border-radius: 30px;
+  box-shadow: 0px 1px 10px black;
+  background-color: var(--darkpink-trans);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+h1{
+  text-align: center;
+  font-size: 4rem;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  color: var(--lightpink);
+  text-decoration: underline 3px var(--purp-hybrid);
+  text-underline-offset: 10px;
+}
+.btn-container{
+  width: 100%;
+  text-align: center;
+  padding: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.tab-btn{
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--purp-hybrid);
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-style: italic;
+  cursor: pointer;
+
+}
+.tab-btn:nth-child(1) {
+  border-top-left-radius: 20px;
+}
+.tab-btn:nth-child(3) {
+  border-top-right-radius: 20px;
+}
+.tab-btn:hover {
+  color: var(--blue);
+  background-color: var(--darkpink-trans);
+  transition: 400ms;
+}
+.tab-btn:active{
+  background-color: var(--darkpink);
+  transition: 100ms;
+}
+.about-content {
+  width: 100%;
+  position: relative;
+}
+.content{
+  visibility: hidden;
+  display: none;
+  padding: 5px 40px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+p {
+  font-family: 'Zen Dots', cursive;
+  color: var(--purp-hybrid);
+  letter-spacing: 3px;
+}
+.active{
+  background-color: var(--darkpink);
+  visibility: visible;
+}
+.content.active {
+  display: block;
+}
+.content:nth-child(3).active {
+  border-top-left-radius: 20px;
+}
+.content:nth-child(2).active {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.content:nth-child(1).active {
+  border-top-right-radius: 20px;
+}
